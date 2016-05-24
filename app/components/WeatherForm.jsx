@@ -13,18 +13,18 @@ var WeatherForm = React.createClass({
             this.props.onSearch(location);
         }
     },
-    
+
     render: function () {
         return(
             <div>
             <form onSubmit={this.onFormSubmit}>
                 <input type="text" ref="location"/>
-                <button>Sende Anfrage</button>
+                <button className="button expanded hollow" >Sende Anfrage</button>
             </form>
             </div>
         )
     }
-    
+
 });
 
 module.exports = WeatherForm;
